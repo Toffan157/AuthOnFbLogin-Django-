@@ -1,0 +1,25 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore JetBrains IDE settings
+.idea/
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment variables
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore node_modules (for JS/React/React Native projects)
+node_modules/
+
+# Ignore build folders
+build/
+dist/
