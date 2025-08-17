@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-md-6 text-center">
-        <h2 class="mb-4">Login with Facebook</h2>
-        <a href="{{ fb_login_url }}" class="btn btn-primary">
-            <i class="bi bi-facebook"></i> Login with Facebook
-        </a>
+<div class="login-card">
+    <h2 class="mb-3">Welcome Back</h2>
+    <p class="text-muted">Login with Facebook to continue</p>
+    
+    <a href="{{ fb_login_url }}" class="btn btn-facebook w-100 py-2 mb-3">
+        <i class="bi bi-facebook me-2"></i> Continue with Facebook
+    </a>
+
+    <hr>
+    <div class="app-info">
+        <p><strong>About this App:</strong></p>
+        <ul class="list-unstyled">
+            <li>✅ Secure login using Facebook OAuth</li>
+            <li>✅ Fetch your profile & managed pages</li>
+            <li>✅ Manage page permissions & tokens</li>
+        </ul>
     </div>
 </div>
 {% endblock %}
